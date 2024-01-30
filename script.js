@@ -47,4 +47,30 @@ let checkName = (name) => {
     : false ; 
 }
 
-console.log(checkName(cityName)); 
+checkName(cityName); 
+
+/*  Crea una funzione che calcoli e ritorni la somma di tutti gli elementi di una array. 
+    Deve accettare l'array come parametro */
+
+let arr = [2,4,5,999]; 
+
+let arrSum = (array) => {
+    let sum = 0 ; 
+    array.forEach((num) => sum += num );  
+    return sum; 
+}
+
+arrSum(arr); 
+
+/* Crea un array che controlli se una funzione NON contiene i numeri 1 o 3. 
+   Se NON li contiene, ritorna `true` altrimenti ritorna `false` */
+
+let arr2 = [2,6,7,8]; 
+
+let checkArr = (array) => {
+    return array.includes(1) ? false
+    : array.includes (3) ? false
+    : true ; 
+}
+
+console.log(checkArr(arr2))
