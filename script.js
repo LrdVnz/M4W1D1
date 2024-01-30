@@ -80,7 +80,7 @@ checkArr(arr2);
 
 /*  Crea una funzione che trovi il tipo di angolo i cui gradi sono passati come parametro. */
 
-let gradi = 90
+let gradi = 90;
 
 function checkAngle(gradi) {
   return gradi < 90
@@ -98,13 +98,13 @@ checkAngle(gradi);
 
 /* Crea una funzione che generi un acronimo a partire da una frase.  */
 
-let frase = 'Fabbrica Italiana Automobili Torino'; 
+let frase = "Fabbrica Italiana Automobili Torino";
 
 let createAcronym = (phrase) => {
-   let regex = /\s(\S)/g;
-   let final = [phrase[0]]; 
-   final = final.concat(phrase.match(regex)).join("");
-   return final; 
+  let regex = /\s(\S)/g;
+  let final = [phrase[0]];
+  final = final.concat(phrase.match(regex)).join("");
+  return final;
 };
 
 console.log(createAcronym(frase));
