@@ -102,8 +102,10 @@ let frase = "Fabbrica Italiana Automobili Torino";
 
 let createAcronym = (phrase) => {
   let regex = /\s(\S)/g;
-  let final = [phrase[0]];
-  final = final.concat(phrase.match(regex)).join("");
+  let final = []
+  final = final.concat(phrase.match(regex));
+  final = final.map((item) => item[1] );
+  final = phrase[0] + final.join("");
   return final;
 };
 
